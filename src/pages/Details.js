@@ -48,21 +48,10 @@ function Details() {
   const { id } = useParams();
   const navigate = useNavigate();
 
-  // const todo = useSelector((todo) => todo.todos.todos); // => todos => 2개
-  // const detail = todo.find((todo) => todo.id === id);
-
-  console.log(todo);
-
-  //useEffect 쓰일때: API 호출 = 웹사이트에서 정보 들고옴
-
   useEffect(() => {
     dispatch(findId(id));
   }, [dispatch, id]);
 
-  //1.[]없으면 상태가 업데이트 될때마다 실행
-  //2.[]처음 렌더링 할 때만 실행
-  //3.[dispatch, id] dispatch, id가 업데이트 될 때마다 실행
-  //의존성 배열
   return (
     <DetailBox>
       <DetailHeader>
