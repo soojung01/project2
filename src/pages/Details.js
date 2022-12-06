@@ -11,7 +11,7 @@ const DetailBox = styled.div`
   position: absolute;
   top: 50%;
   left: 50%;
-  margin: -150px 0px 0px -200px;
+  margin: -200px 0px 0px -280px;
 `;
 
 const DetailHeader = styled.div`
